@@ -10,3 +10,4 @@ HTML5 – Page structure and semantic layout
 CSS3 – Styling, layout design, responsiveness
 
 JavaScript – Interactivity, navigation, and dynamic content handling
+![image](https://github.com/user-attachments/assets/00fb5e94-3eb1-481c-af9d-95937f17246e)
