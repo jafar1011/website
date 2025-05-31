@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    scroll-behavior: smooth;
+    color: #fff;
+  }
+
+  /*MAIN BAR */
+  .navbar{
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      
+  }
+  
+  
+  
+  nav{
+    flex: 1;
+    text-align: right;
+  }
+  .container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  nav ul{
+    
+    display: inline-block;
+    list-style-type: none;
+  }
+  nav ul li{
+    display: inline-block;
+    margin-bottom: 45px;
+    margin-right: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 8px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    margin-top: 20px;
+    
+  }
+  nav a:hover,
+  nav a.active{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+  }
+
+
+
+
+  body {
+  
+  
+    background-color: #0f0f0f;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    animation: fadeInAnimation ease 1.5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+    
+  }
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  .login-section{
+    border: 2px solid #b74b4b;
+    height: 570px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: 10px;
+    border-radius: 10px;
+    transition: .8s;
+    overflow: hidden;
+    
+}
+.login-section:hover{
+    box-shadow: 0 0 70px #b74b4b;
+}
+.login-section .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.form-box h2{
+    text-align: center;
+    font-size: 35px;
+}
+.form-box .input-box{
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+    color: #fff;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.3 ease;
+}
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+    cursor: pointer;
+}
+.input-box input:focus~ label,
+.form-box input:valid ~label{
+    top: -5px;
+    color: #b74b4b;
+}
+.btn{
+    background-color: #fff;
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 13px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    background-color: #b74b4b;
+    box-shadow: rgb(0,0,0,0.4);
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.create-account{
+    font-size: 15px;
+    text-align: center;
+    margin: 25px;
+}
+.create-account p a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.create-account p a:hover{
+    color: #b74b4b;
+    font-weight: 600;
+}
+.remmember-pass{
+   font-size: 14px;
+   font-weight: 500;
+   margin: -15px 0 15px;
+   display: flex;
+   justify-content: space-between; 
+}
+.remmember-pass label input{
+    accent-color: #b74b4b;
+    margin-right: 8px;
+}
+.remmember-pass a{
+    text-decoration: none; 
+    font-weight: 600;   
+}
+.remmember-pass a:hover{
+    color: #b74b4b;
+}
+.login-section .form-box.register{
+    transform: translateY(-530px);
+    transition: transform .4s ease;
+}
+.login-section.active .form-box.register{
+    transform: translateY(0);
+    transition-delay: .4s;
+}
+.login-section .form-box.login{
+    transform: translateY(0px);
+    transition: transform .7s;
+}
+.login-section.active .form-box.login{
+    transform: translateY(490px);
+    transition-delay: 0s;
+}

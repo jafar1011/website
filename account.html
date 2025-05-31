@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Electra</title>
+  <link rel="stylesheet" href="account.css">
+  <link rel="icon" type="image/jpg" href="images/logo.png"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+     rel='stylesheet'>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src ="images/logo.png" width="170px" style="position: relative; bottom: 60px; right: 20px; ">
+        </div>
+        <nav>
+          <!--main bar-->
+          <ul style="bottom: 40px; position: relative;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" id="accountproductbtn">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="account.html" style="color: #b74b4b; border-bottom: 3px solid #b74b4b;"> Account</a></li>
+          <li> <a href="products.html" id="accountcartbtn"> <i style="font-size:23px" class="fa">&#xf07a;</i> &nbsp; Cart</a></li>
+        </ul>
+        </nav>
+      </div>
+
+
+
+
+
+
+      <!-- ACCOUNT REG CODE-->
+    <div class="login-section">
+      <div class="form-box login">
+          <!--Sign in -->
+          <form action="">
+              <h2>Sign In</h2>
+              <div class="input-box">
+                  <span class="icon">
+                      <i class='bx bxs-envelope'></i>
+                  </span>
+                  <input type="text"   id="emailbox" >
+                  <label for="">Email</label>
+              </div>
+              <div class="input-box">
+                  <span class="icon">
+                      <i class='bx bxs-lock-alt' ></i>
+                  </span>
+                  <input id="passwordbox1" type="password" >
+                  <label for="">Password</label>
+              </div>
+              <div class="remmember-pass">
+                  <label for=""><input type="checkbox" name="" id="checkbox1">Show password</label>
+                  <a href="contact.html" style="bottom: 30px; position: relative;">Forgot password?</a>
+              </div>
+              <div id="accsignin" class="btn">Sign In</div>
+              <div class="create-account">
+                  <p>Don't have an account? <a href="# #emailbox" class="register-link">Sign Up</a></p>
+              </div>
+          </form>
+      </div>
+      <!-- Sign up-->
+      <div class="form-box register">
+          <form action="">
+              <h2>Sign Up</h2>
+              <div class="input-box">
+                  <span class="icon">
+                      <i class='bx bxs-envelope'></i>
+                  </span>
+                  <input type="text"   id="text1"  >
+                  <label for="">Email</label>
+              </div>
+              <div class="input-box">
+                  <span class="icon">
+                      <i class='bx bx-user-circle'></i>
+                  </span>
+                  <input type="text"   id="text2"  >
+                  <label for="">Username</label>
+              </div>
+              <div class="input-box">
+                  <span class="icon">
+                      <i class='bx bxs-lock-alt' ></i>
+                  </span>
+                  <input type="password" id="password1" >
+                  <label for="">Password</label>
+              </div>
+              <div class="input-box">
+                  <span class="icon">
+                      <i class='bx bxs-lock-alt' ></i>
+                  </span>
+                  <input type="password" id="password2" >
+                  <label for=""> Confirm password</label>
+              </div>
+              <div class="remmember-pass">
+                  <label for=""><input type="checkbox" id="checkbox2">Show password</label>
+              </div>
+              <div id="accsignup" class="btn">Sign Up</div>
+              <div class="create-account">
+                  <p>Already have an account? <a href="# #emailbox" class="login-link">Sign In</a></p>
+              </div>
+          </form>
+      </div>
+  </div>
+  <script src="account.js"></script>
+</body>
